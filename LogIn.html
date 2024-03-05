@@ -1,0 +1,147 @@
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/Style.css" />
+    <link rel="stylesheet" href="css/Style1.css" />
+    <link rel="stylesheet" href="css/Style2.css" />
+    <link rel="stylesheet" href="css/Style3.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <Style>
+        @media (min-width:768px) {
+            body {
+                background-image: url('img/Group\ 33995.png');
+                background-repeat: no-repeat;
+                background-position: left;
+            }
+        }
+    </Style>
+
+
+    <title>بیمارستان تخصصی سینا|صفحه ورود</title>
+</head>
+</head>
+
+<body>
+    <div class="BackBtn"><img class="BackBtn" src="img/Group 33999.png"
+            onclick="window.location.href='http://127.0.0.1:5500/Index.html';"></div>
+    <div class="container">
+
+
+
+
+
+
+
+
+        <div class="user">
+            <div class="p-2 mx-auto mx-md-0"><img src="img/logo-copy64-1.png" class="LoginLogo"></div>
+            <div class="p-2 mx-auto mx-md-0"><img src="img/Group 1.png" class="LoginLogo2"></div>
+            <div class="p-2">
+                <h2 class="h2Login">ورود</h2>
+            </div>
+
+            <form class="row g-2 formLogin" onsubmit="return validform()" action="#">
+                <div class="cols-12">
+                    <div class="col-md-5">
+                        <label class="form-label">نام کاربری </label>
+                        <input type="text" class="form-control inputLogin " id="username">
+                        <span id="usernameerror" class="form-label errorForm  d-none">وارد کردن نام کاربری ضروری
+                            است</span>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <label class="form-label">رمز عبور</label>
+                    <div class="position-relative">
+                        <input type="password" class="form-control inputLogin " id="password" dir="ltr">
+                        <img src="img/Vector.svg" class="position-absolute span--1 inputicon" alt="">
+                        <!-- <span class="fa fa-eye position-absolute span--1 inputicon"></span> -->
+                        <span id="passworderror" class="form-label errorForm  d-none">وارد کردن پسوورد ضروری
+                            است</span>
+
+                    </div>
+
+                </div>
+                <div class="row cols-12">
+                    <button type="submit" class="btn btn-primary BtnLogin2 ">ورود</button>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <label class="form-label">فراموشی رمز عبور </label>
+                </div>
+
+
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    </div>
+
+</body>
+
+
+<script>
+
+
+
+
+
+    function validform() {
+
+
+
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        var usernameerror = document.getElementById('usernameerror');
+        var passworderror = document.getElementById('passworderror');
+        let validusername = username.length != "";
+        let validpassword = password.length != "";
+
+
+
+
+
+        // if (validname && validfamily && validcodeMeli && validfathername
+        //     && validbirthday && validaddress && validtel && validmobile) {
+        //     btn.setAttribute("data-toggle", "modal");
+
+        // }
+        if (!validusername) {
+
+
+            usernameerror.classList.remove('d-none');
+        }
+
+        if (!validpassword) {
+
+            passworderror.classList.remove('d-none');
+        }
+
+
+
+
+
+
+
+    }
+
+
+</script>
+
+</html>

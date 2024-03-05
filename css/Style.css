@@ -1,0 +1,1127 @@
+@font-face {
+  font-family: Yekan;
+  font-weight: 500;
+  color: black;
+  src: url("fonts/Vazirmatn-Regular.ttf"),
+}
+
+body {
+  background-color: #eeeeee;
+  direction: rtl;
+  font-family: Yekan;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  height: auto;
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+#header {
+
+  width: 100%;
+  height: 10%;
+  background-color: #eeeeee;
+  padding: 1rem;
+  display: flex;
+  font-weight: bolder;
+}
+
+.Logo {
+  height: 4rem;
+  width: auto;
+}
+
+.navIndexMenue {
+  width: auto;
+  height: auto;
+  margin-right: 5rem;
+  position: relative;
+  display: flex;
+}
+
+.navIndexMenue a {
+  line-height: 50px;
+  padding: 1rem 2rem 2rem 2rem;
+  height: 70%;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(88, 82, 82);
+  cursor: pointer;
+}
+
+a :hover {
+  color: aqua;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+}
+
+
+.textIndex {
+  direction: rtl;
+  font-family: Yekan;
+  color: black;
+  font-size: 30;
+  font-weight: bold;
+  margin-top: 10%;
+  margin-right: 20%;
+}
+
+.BtnSingup {
+  height: 3rem;
+  width: 7rem;
+  border-radius: 5px;
+  border-color: #0e8196;
+  border-width: 2px;
+  font-family: Yekan;
+  color: #0e8196;
+  font-weight: bold;
+}
+
+.BtnLogin {
+  height: 3rem;
+  width: 7rem;
+  border-radius: 5px;
+  font-family: Yekan;
+  color: #eeeeee;
+  background-color: #0694A2;
+  font-weight: bold;
+  margin-right: 20%;
+}
+
+
+
+.BackGround {
+  height: 70vh;
+  margin-top: 10%;
+  background-image: url('../img/Group\ 33996.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 30%;
+}
+
+.LoginLogo {
+  height: 6rem;
+  width: 10rem;
+  margin-right: 10%;
+}
+
+.LoginLogo2 {
+  height: 5rem;
+  width: 27rem;
+}
+
+.inputLogin {
+  width: 400px !important;
+  position: relative !important;
+  padding-right: 35px !important;
+}
+
+.inputicon {
+  margin-top: -30px !important;
+  margin-right: 10px;
+  height: 25px;
+  width: 25px;
+  /* padding-left: 30px !important; */
+  cursor: pointer;
+}
+
+.BtnLogin2 {
+  width: 400px !important;
+  border-radius: 10px;
+  border-color: 69BEC7;
+  border-width: 1px;
+  background-color: 69BEC7;
+  color: #eeeeee;
+  background-color: #0694A2;
+  font-weight: bold;
+  margin-right: 0;
+  margin-top: 20px;
+}
+
+.h2Login {
+  color: #0e8196;
+  margin-right: 10rem;
+  font-weight: bolder;
+}
+
+.BackBtn {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.inputSignup {
+  width: 200px;
+  padding-right: 35px !important;
+}
+
+.BtnSignup2 {
+  width: 400px;
+  border-radius: 10px;
+  border-color: #69BEC7;
+  border-width: 1px;
+  background-color: 69BEC7;
+  color: #eeeeee;
+  background-color: #0694A2;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.dashboardMenu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: #69BEC7;
+  width: 100px;
+  border-radius: 900px;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  height: 700px !important;
+
+  list-style: none;
+}
+
+.profileimg {
+
+  height: auto;
+  width: auto;
+  margin-top: 20px;
+}
+
+.LogoBar {
+  background-color: #ebf6f8;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.logoDashboard {
+
+  height: 5rem;
+  width: 8rem;
+  margin-top: 30px;
+}
+
+.navDashBoard {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.navDashBoard a {
+  line-height: 50px;
+
+  padding: 0rem 1.5rem 1rem 10px;
+  font-size: 14px;
+  font-weight: bolder;
+  flex-direction: column;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  color: #eeeeee;
+  cursor: pointer;
+
+
+}
+
+.backgroundmenu {
+  background-color: #ebf6f8;
+  height: 50px;
+  width: 100px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.hoverdashboardicon {
+  margin-right: -35px !important;
+  margin-top: 10px;
+  position: fixed;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.nameDashBoard {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 15px;
+}
+
+.darkmodeBtn {
+  height: 30px;
+  width: 70px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-top: 90px;
+  cursor: pointer;
+  display: flex;
+  margin-right: 10px;
+}
+
+.swichdarkmodeBtn {
+  height: 30px;
+  width: 30px;
+  background-color: #EBF6F8;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.icondarkmodeBtn {
+  margin-right: 5px;
+}
+
+.headDashBoard {
+  margin-top: 0;
+  margin-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 100px !important;
+}
+
+.badgenotif {
+  color: black;
+  background-color: #3da4ad;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  z-index: 3;
+  margin-top: -20px;
+
+
+}
+
+.badgenotiftab {
+  background-color: #3da4ad;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.mainContent {
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 80% !important;
+  margin-top: 0;
+}
+
+.contentDashboard1 {
+  height: 200px;
+  width: 200px;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-right: 70px;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.contentDashboard2 {
+  height: 200px;
+  width: 75%;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  margin-right: 50px;
+  margin-top: 30px;
+  justify-content: center;
+  text-align: right;
+  padding: 10px;
+  display: flex;
+}
+
+.contentDashboard3 {
+  height: 180px;
+  width: 92%;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  margin-right: 70px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: 1px;
+  padding-right: 30px;
+}
+
+#style-16::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+
+
+}
+
+#style-16::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+#style-16::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  height: 40px !important;
+  width: 5px;
+  background-color: #0694A2;
+}
+
+.scrolbaricon {
+  height: 10px;
+  width: 10px;
+}
+
+.conetntScrolbar {
+  display: flex;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+.iconNotif {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  z-index: -50;
+  cursor: pointer;
+  margin-top: -20px;
+}
+
+.BoxmainContent {
+  margin-top: 20px;
+  align-items: center !important;
+  display: flex !important;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+.thcolor {
+  background-color: #69BEC7 !important;
+  border: none;
+}
+
+.dropdown-item {
+  width: 300px;
+  height: auto;
+  align-items: center;
+  display: flex;
+
+}
+
+.tr {
+  border: none;
+  background-color: transparent !important;
+}
+
+.lablenezam {
+  height: 40px;
+  width: 100px;
+  background-color: #FFF;
+  border-radius: 10px;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+
+}
+
+
+
+
+
+@media (min-width:320px) {
+  .textIndex {
+
+    font-size: 17px !important;
+    margin-top: 10%;
+    margin-right: 20%;
+  }
+
+  .BtnSingup {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;
+
+  }
+
+  .BtnLogin {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;
+  }
+
+  .Logo {
+    height: 3rem !important;
+    width: 200px !important;
+  }
+
+  .Logo2 {
+    height: 3rem !important;
+    width: 80px !important;
+    margin-right: 1% !important;
+  }
+
+  .LoginLogo {
+    height: 80px;
+    width: 80px;
+    margin-top: 80px;
+    margin-right: 60px !important;
+  }
+
+  .LoginLogo2 {
+    margin-top: 10px;
+    margin-right: 40px;
+    height: 80px;
+    width: 200px;
+  }
+
+  .form-label {
+    margin-right: 70px;
+  }
+
+  .inputLogin {
+    width: 200px !important;
+    margin-right: 60px !important;
+  }
+
+  .BtnLogin2 {
+    width: 200px !important;
+    margin-right: 60px !important;
+  }
+
+  .h2Login {
+    margin-right: 120px !important;
+  }
+
+  .inputSignup {
+    margin-right: 50px !important;
+  }
+
+  .form-label2 {
+    margin-right: 50px !important;
+  }
+
+  .inputicon2 {
+    margin-right: 60px !important;
+  }
+
+  .BtnSignup2 {
+    width: 200px !important;
+    margin-right: 60px;
+  }
+
+  .headDashBoard {
+
+    display: flex;
+    justify-content: right;
+    width: 90%;
+    height: 100px !important;
+    margin-right: -10px;
+
+
+  }
+
+  .nameDashBoard {
+    font-size: 10px !important;
+    margin: 0 !important;
+    width: 80px !important;
+
+
+  }
+
+  .iconNotif {
+    height: 30px !important;
+    width: 30px !important;
+    margin-top: -20px;
+    margin-right: -10px !important;
+
+  }
+
+  .lablenezam {
+    width: 30px !important;
+
+
+  }
+
+  .contentDashboard1 {
+    margin-right: 0px !important;
+  }
+
+  .contentDashboard3 {
+    margin-right: 0px !important;
+  }
+
+  .contentDashboard2 {
+    display: none !important;
+  }
+
+
+}
+
+
+
+@media (min-width:375px) {
+  .textIndex {
+
+    font-size: 15;
+    margin-top: 10%;
+    margin-right: 20%;
+  }
+
+  .BtnSingup {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;
+
+  }
+
+  .BtnLogin {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;
+  }
+
+  .Logo2 {
+    height: 4rem;
+    width: 100px;
+    margin-right: 1% !important;
+  }
+
+
+
+  .Logo {
+    height: 4rem;
+    width: 250px !important;
+
+  }
+
+  .LoginLogo {
+    height: 80px;
+    width: 80px;
+    margin-top: 80px;
+    margin-right: 120px !important;
+  }
+
+  .LoginLogo2 {
+    margin-top: 10px;
+    margin-right: 80px !important;
+    height: 80px;
+    width: 200px;
+  }
+
+  .LoginLogo {
+    height: 80px;
+    width: 80px;
+    margin-top: 80px;
+    margin-right: 40px;
+  }
+
+  .LoginLogo2 {
+    margin-top: 10px;
+    margin-right: 40px;
+    height: 80px;
+    width: 200px;
+  }
+
+  .form-label {
+    margin-right: 110px;
+  }
+
+  .inputLogin {
+    width: 200px !important;
+    margin-right: 100px !important;
+  }
+
+  .BtnLogin2 {
+    width: 200px;
+    margin-right: 100px !important;
+  }
+
+  .h2Login {
+    margin-right: 160px !important;
+  }
+
+  .inputicon {
+    margin-right: 110px !important;
+  }
+
+  .inputicon2 {
+    margin-right: 80px !important;
+  }
+
+  .inputSignup {
+    margin-right: 70px !important;
+  }
+
+  .form-label2 {
+    margin-right: 70px !important;
+  }
+
+
+
+  .BtnSignup2 {
+    width: 200px !important;
+    margin-right: 80px;
+  }
+
+  .headDashBoard {
+
+    display: flex;
+    justify-content: right;
+    width: 90%;
+    height: 100px !important;
+    margin-right: -10px;
+
+
+  }
+
+  .nameDashBoard {
+    font-size: 10px !important;
+    margin: 0 !important;
+    width: 80px !important;
+    margin-right: 10px !important;
+
+
+  }
+
+
+
+  .lablenezam {
+    width: 40px !important;
+
+
+  }
+
+  .contentDashboard1 {
+    margin-right: 30px !important;
+  }
+
+  .contentDashboard3 {
+    width: 200px !important;
+    margin-right: 30px !important;
+  }
+
+
+
+}
+
+@media (min-width:425px) {
+  .textIndex {
+
+    font-size: 20px;
+    margin-top: 10%;
+    margin-right: 20%;
+  }
+
+
+
+  .Logo2 {
+    height: 4rem;
+    width: 100px;
+    margin-right: 1% !important;
+  }
+
+
+
+  .Logo {
+    height: 4rem;
+    width: 200px !important;
+  }
+
+  .LoginLogo {
+    height: 80px;
+    width: 80px;
+    margin-top: 80px;
+    margin-right: 40px;
+  }
+
+  .LoginLogo2 {
+    margin-top: 10px;
+    margin-right: 50px;
+    height: 80px;
+    width: 200px;
+  }
+
+  .inputicon {
+    margin-right: 110px !important;
+  }
+}
+
+
+
+
+@media (min-width:768px) {
+  .Logo2 {
+    height: 4rem;
+    width: 100px;
+    margin-right: 1% !important;
+  }
+
+
+
+  .Logo {
+    height: 4rem;
+    width: 200px !important;
+  }
+
+
+  .form-label {
+    margin-right: 210px;
+    width: 150px;
+  }
+
+  .inputLogin {
+    width: 200px !important;
+    margin-right: 210px !important;
+  }
+
+  .BtnLogin2 {
+    width: 200px !important;
+    margin-right: 210px !important;
+  }
+
+  .h2Login {
+    margin-right: 260px !important;
+  }
+
+  .inputicon {
+    margin-right: 220px !important;
+  }
+
+  .LoginLogo2 {
+    margin-right: 210px !important;
+  }
+
+  .LoginLogo {
+    margin-right: 250px !important;
+  }
+
+  .inputSignup {
+    margin-right: 100px !important;
+  }
+
+  .form-label2 {
+    margin-right: 100px !important;
+    margin-top: 10px !important;
+  }
+
+  .inputicon2 {
+    margin-right: 110px !important;
+  }
+
+  .BtnSignup2 {
+    width: 430px !important;
+    margin-right: 110px;
+  }
+
+  .headDashBoard {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+    height: 100px !important;
+    margin-right: 30px;
+
+
+  }
+
+  .nameDashBoard {
+    font-size: 15px !important;
+
+    width: auto !important;
+
+
+  }
+
+  .iconNotif {
+    height: 30px !important;
+    width: 30px !important;
+    margin-top: -20px;
+    margin-right: -10px !important;
+
+  }
+
+  .lablenezam {
+    width: 80px !important;
+  }
+
+  .contentDashboard1 {
+    margin-right: 0px !important;
+  }
+
+  .contentDashboard3 {
+    width: 750px !important;
+    margin-right: 0 !important;
+  }
+
+  .contentDashboard2 {
+    display: flex !important;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    width: 100% !;
+  }
+
+  .justifying {
+    margin-right: 40px;
+  }
+
+
+
+
+}
+
+
+@media (min-width:1024px) {
+  .Logo2 {
+    height: 4rem;
+    width: 100px;
+    margin-right: 30px;
+  }
+
+  .textIndex {
+
+    font-size: 25px !important;
+    margin-top: 10%;
+    margin-right: 20%;
+  }
+
+  .Logo {
+    height: 4rem;
+    width: 200px !important;
+  }
+
+  .backindex {
+    height: 430px !important;
+    width: 430px !important;
+    margin-right: 70px;
+  }
+
+  .form-label {
+    margin-right: 40px;
+    width: 150px;
+  }
+
+  .inputLogin {
+    width: 350px !important;
+    margin-right: 40px !important;
+  }
+
+  .BtnLogin2 {
+    width: 350px !important;
+    margin-right: 40px !important;
+  }
+
+  .h2Login {
+    margin-right: 180px !important;
+  }
+
+  .inputicon {
+    margin-right: 50px !important;
+  }
+
+  .LoginLogo2 {
+    margin-right: 110px !important;
+  }
+
+  .LoginLogo {
+    margin-right: 150px !important;
+  }
+
+
+  .inputSignup {
+    margin-right: 140px !important;
+  }
+
+  .form-label2 {
+    margin-right: 140px !important;
+    margin-top: 10px !important;
+  }
+
+  .inputicon2 {
+    margin-right: 150px !important;
+  }
+
+  .BtnSignup2 {
+    width: 430px !important;
+    margin-right: 150px;
+  }
+
+  .LoginLogo22 {
+    margin-right: 250px !important;
+  }
+
+  .LoginLogo222 {
+    margin-right: 300px !important;
+  }
+
+  .h2Login2 {
+    margin-right: 300px !important;
+  }
+
+  .contentDashboard3 {
+    width: 800px !important;
+  }
+
+}
+
+
+
+
+
+@media (min-width:1440px) {
+
+
+  .textIndex {
+
+    font-size: 30px !important;
+    margin-top: 10%;
+    margin-right: 20%;
+  }
+
+  .Logo2 {
+    height: 4rem;
+    width: 100px;
+    margin-right: -90px;
+  }
+
+  .BtnSingup {
+    height: 3rem !important;
+    width: 7rem;
+
+  }
+
+  .BtnLogin {
+    height: 3rem !important;
+    width: 7rem;
+
+  }
+
+  .Logo {
+    height: 4rem;
+    width: 200px !important;
+  }
+
+  .backindex {
+    height: 500px !important;
+    width: 500px !important;
+    margin-right: 200px !important;
+  }
+
+
+  .inputSignup {
+    width: 250px !important;
+    margin-right: 10px !important;
+  }
+
+  .form-label2 {
+    margin-right: 20px !important;
+    margin-top: 10px !important;
+  }
+
+  .inputicon2 {
+    margin-right: 20px !important;
+  }
+
+  .BtnSignup2 {
+    width: 570px !important;
+    margin-right: 20px;
+  }
+
+  .h2Login2 {
+    margin-right: 250px !important;
+  }
+
+  .LoginLogo22 {
+    margin-right: 200px !important;
+  }
+
+  .LoginLogo222 {
+    margin-right: 240px !important;
+  }
+
+  .contentDashboard2 {
+    overflow-y: visible;
+    overflow-x: visible;
+    width: 100% !important;
+
+  }
+
+  .contentDashboard3 {
+    height: 180px;
+    width: 100% !important;
+
+  }
+
+  .nameDashBoard {
+    font-size: 20px !important;
+  }
+
+}
+
+@media (min-width:2560px) {
+
+
+  .textIndex {
+
+    font-size: 60px !important;
+    margin-top: 10%;
+    margin-right: 20%;
+  }
+
+  .backindex {
+    height: 800px !important;
+    width: 800px !important;
+    margin-right: 400px !important;
+  }
+
+  .BtnSingup {
+    height: 5rem !important;
+    width: 10rem;
+
+  }
+
+  .BtnLogin {
+    height: 5rem !important;
+    width: 10rem;
+
+  }
+
+}

@@ -1,0 +1,446 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/Style.css" />
+    <link rel="stylesheet" href="css/Style1.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <title>بیمارستان تخصصی سینا|داشبورد </title>
+</head>
+<Style>
+    body {
+        background-color: #ebf6f8;
+    }
+</Style>
+
+<body class="d-flex flex-column">
+
+    <div class="BackBtn"><img class="BackBtn" src="img/Group 33999.png"
+            onclick="window.location.href='http://127.0.0.1:5500/Index.html';"></div>
+
+    <div class="contentsDashboard row col-12">
+        <div class="dashboardMenu col-4 d-none d-lg-flex">
+            <div class="profileimg"><img src="img/Ellipse 49.png"></div>
+
+            <div class="LogoBar"><img class="logoDashboard" src="img/logo-copy64.png" alt=""></div>
+
+            <nav class="navDashBoard">
+
+                <div class="backgroundmenu">
+                    <img src="img/Group 34029.png" class="hoverdashboardicon">
+                    <a class="text-dark" href="Dashboard.html"> داشبورد</a>
+                </div>
+                <a href="ListOfUser.html"> بیماران</a>
+                <a href="Demographig.html">اطلاعیه ها </a>
+                <a href="#">تنظیمات </a>
+                <a href="#">خروج </a>
+
+            </nav>
+            <div class="darkmodeBtn">
+                <div class="swichdarkmodeBtn"></div>
+                <img onclick="document.body.classList.toggle('darkmode')" src="img/moon.svg" class="icondarkmodeBtn">
+            </div>
+
+        </div>
+        <div class="mainContent d-flex">
+
+            <div class="headDashBoard">
+
+                <div class="d-flex BoxmainContent">
+                    <p class="nameDashBoard">دکتر ناصر مقدسی</p>
+
+
+
+                    <div>
+
+                        <div class="dropdown">
+                            <button class="dropdown-toggle border-0 bg-transparent  " type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div>
+                                    <svg class="iconNotif" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+                                    </svg>
+
+
+                                    <span class="badge badge-secondary badgenotif">3</span>
+
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">
+                                        <div class=" justify-content-between d-flex">
+                                            <span class="badge badge-secondary badgenotiftab">1</span>
+                                            <p class="px-2"> پذیرش علی محمدی را تایید کنید</p>
+
+
+
+                                        </div>
+
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="  d-flex">
+                                            <span class="badge badge-secondary badgenotiftab">1</span>
+                                            <p class="px-2"> وضعیت بیماران در لیست آماده است</p>
+
+
+
+                                        </div>
+
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="  d-flex">
+                                            <span class="badge badge-secondary badgenotiftab">1</span>
+                                            <p class="px-2"> تیکت شما در حال رسیدگی است.</p>
+
+
+
+                                        </div>
+
+                                    </a></li>
+
+                            </ul>
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <div class="d-flex BoxmainContent">
+                    <p class="nameDashBoard"> شماره نظام پزشکی: </p>
+                    <div class="lablenezam">
+                        <p class="nameDashBoard"> ۹۷۰۴۰ </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="d-flex justifying ">
+                <div class="contentDashboard1">
+                    بیماران جدید
+                    <div id="chart1" class="chartStyle1"></div>
+                    <div></div>
+                </div>
+
+
+                <div class=" row contentDashboard2  text-dark px-3 " id="style-16">
+                    <div class="px-0">ویزیت های پیش رو</div>
+
+                    <div>
+                        <table class="table" style="overflow-x:auto;">
+                            <thead>
+                                <tr class="thcolor">
+
+                                    <th scope="col" class="thcolor"
+                                        style=" border-top-right-radius: 10px; border-bottom-right-radius: 10px; ">
+                                        نام
+                                        بیمار</th>
+                                    <th scope="col" class="thcolor">شماره نوبت</th>
+                                    <th scope="col" class="thcolor">علت مراجعه</th>
+                                    <th scope="col" class="thcolor">ساعت پذیرش </th>
+                                    <th scope="col" class="thcolor"
+                                        style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">تاریخ
+                                        پذیرش </th>
+                                </tr>
+                            </thead>
+                            <tbody class="tr">
+                                <tr>
+
+                                    <td class="tr">علی محمدی</td>
+                                    <td class="tr">۱۷۸</td>
+                                    <td class="tr">تصادف</td>
+                                    <td class="tr">۱۴ : ۱۷</td>
+                                    <td class="tr">۱۴۰۲/۰۴/۲۴</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="tr"> زهرا مرادی</td>
+                                    <td class="tr">۱۷۹</td>
+                                    <td class="tr">تصادف</td>
+                                    <td class="tr">۱۴ : ۱۷</td>
+                                    <td class="tr">۱۴۰۲/۰۴/۲۴</td>
+                                </tr>
+                                <tr>
+                                    <td class="tr"> محمد قادری</td>
+                                    <td class="tr">۱۸۰</td>
+                                    <td class="tr">تصادف</td>
+                                    <td class="tr">۱۴ : ۱۷</td>
+                                    <td class="tr">۱۴۰۲/۰۴/۲۴</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-flex justifying ">
+
+
+
+
+                <div class="contentDashboard1">
+                    همه بیماران
+                    <div id="chart2"></div>
+                </div>
+
+
+
+
+
+
+                <div class="contentDashboard2 d-flex row  " id="style-16">
+                    <div class="row h-50 ">
+                        <div class="px-0"> بیماران ویزیت شده</div>
+
+                        <div class="col-md-3   py-1 px-3">
+
+                            <table class="table tablechart ">
+                                <thead>
+                                    <tr>
+                                        <td scope="col" class="tr">
+                                            <div class="tdchart1">امروز</div>
+                                        </td>
+                                        <td scope="col" class="tr ">
+                                            <div class="tdchart">۱۸</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="col" class="tr">
+                                            <div class="tdchart1">هفتگی</div>
+                                        </td>
+                                        <td scope="col" class="tr ">
+                                            <div class="tdchart">۲۹۸</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td scope="col" class="tr">
+                                            <div class="tdchart1">ماهانه</div>
+                                        </td>
+                                        <td scope="col" class="tr ">
+                                            <div class="tdchart">۵۸۷</div>
+                                        </td>
+                                    </tr>
+
+                                </thead>
+                            </table>
+
+
+
+                        </div>
+
+
+                        <div class="col-md-9  h-auto" id="chart3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="d-flex justifying ">
+
+                <div class="contentDashboard3  " id="style-16">
+
+                    <br>
+                    لیست اطلاعیه ها
+                    <br><br>
+                    <div class="d-flex col-12">
+
+                        <div><img class="scrolbaricon col-1" src="img/Ellipse 52.png"></div>
+                        <div class="col-11 conetntScrolbar">
+                            <p>ارائه برنامه کاربردی مبتنی بر تلفن همراه هوشمند برای خودمدیریتی بیماران مبتلا به
+                                مالتیپل
+                                اسکلروزیس </p>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex col-12">
+
+                        <div><img class="scrolbaricon col-1" src="img/Ellipse 52.png"></div>
+                        <div class="col-11 conetntScrolbar">
+                            <p>تزریق واکسن کرونا به بیماران مبتلا به ام اس در بیمارستان سینا</p>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex col-12">
+
+                        <div><img class="scrolbaricon col-1" src="img/Ellipse 52.png"></div>
+                        <div class="col-11 conetntScrolbar">
+                            <p>ارتباط بین افزایش سطح کلسترول خون و اختلال شناختی ( عملکردهای ذهنی ) در بیماران مبتلا به
+                                ام اس</p>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex col-12">
+
+                        <div><img class="scrolbaricon col-1" src="img/Ellipse 52.png"></div>
+                        <div class="col-11 conetntScrolbar">
+                            <p>ارائه برنامه کاربردی مبتنی بر تلفن همراه هوشمند برای خودمدیریتی بیماران مبتلا به
+                                مالتیپل
+                                اسکلروزیس </p>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex col-12">
+
+                        <div><img class="scrolbaricon col-1" src="img/Ellipse 52.png"></div>
+                        <div class="col-11 conetntScrolbar">
+                            <p>ارائه برنامه کاربردی مبتنی بر تلفن همراه هوشمند برای خودمدیریتی بیماران مبتلا به
+                                مالتیپل
+                                اسکلروزیس </p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    var options1 = {
+        series: [46],
+        chart: {
+            height: 180,
+            type: 'radialBar',
+        },
+        plotOptions: {
+            radialBar: {
+                hollow: {
+                    size: '55%',
+
+                }
+            },
+        },
+        labels: [46],
+        fill: {
+            colors: ['#69BEC7']
+        }
+    };
+
+    var chart1 = new ApexCharts(document.querySelector("#chart1"), options1);
+    chart1.render();
+
+
+    var options2 = {
+        series: [57, 87, 75],
+        chart: {
+            height: 180,
+            type: 'radialBar',
+        },
+        plotOptions: {
+            radialBar: {
+                dataLabels: {
+                    name: {
+                        fontSize: '28px',
+                    },
+                    value: {
+                        fontSize: '16px',
+                    },
+                    total: {
+                        show: true,
+                        formatter: function (w) {
+                            // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+                            return 57
+                        }
+                    }
+                }
+            }
+        },
+        fill: {
+            colors: ['#69BEC7', '#0694A2']
+        }
+
+    };
+
+    var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
+    chart2.render();
+
+
+
+
+    var options3 = {
+        series: [{
+            name: "Desktops",
+            data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+        }],
+        chart: {
+            height: 160,
+            type: 'line',
+            zoom: {
+                enabled: false
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'straight'
+        },
+        title: {
+
+            align: 'right'
+        },
+        grid: {
+            row: {
+                colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                opacity: 0.5
+            },
+        },
+        xaxis: {
+            categories: ['جمعه', 'پنج شنبه', 'چهارشنبه', 'سه شنبه', 'دو شنبه', 'یک شنبه', 'شنبه'],
+        }
+        ,
+
+        colors: ['#0694A2']
+
+    };
+
+    var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
+    chart3.render();
+
+</script>
+
+</html>

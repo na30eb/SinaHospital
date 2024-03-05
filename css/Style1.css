@@ -1,0 +1,353 @@
+.scrollBarList {
+    height: 70%;
+    width: 100% !important;
+    overflow-y: scroll;
+    align-items: start;
+    justify-content: right;
+}
+
+
+.scrolbaricon {
+    height: 10px;
+    width: 10px;
+
+
+}
+
+.conetntScrolbar {
+    display: flex;
+    margin-right: 10px;
+    margin-top: -5px;
+
+}
+
+
+
+
+
+.thcolorList {
+    color: #ffffff !important;
+    background-color: #69BEC7 !important;
+}
+
+.BoxContentList1 {
+    height: 30px;
+    width: 100%;
+
+
+}
+
+.BoxContentList {
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    border-color: gray;
+    padding-top: 30px;
+    margin-top: 30px;
+    align-items: center;
+    vertical-align: middle;
+
+
+}
+
+.BoxContentListtable {
+    border: none;
+}
+
+.detailicon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+
+}
+
+.boxnav {
+    border-color: #69BEC7 !important;
+    background-color: #ffffff;
+    border-width: 20px !important;
+    width: 100%;
+    height: 95%;
+    border-radius: 10px;
+
+}
+
+.boxnavbtn {
+    border-color: #69BEC7 !important;
+    border-width: 2px !important;
+    color: #0694A2;
+    clip-path: polygon(calc(100% - 85%)0, 100% 0, 100% 100%, 0% 100%, 0% calc(100% - 60%)) !important;
+}
+
+.active {
+
+    background-color: #69BEC7 !important;
+}
+
+.imgDemo {
+
+    height: 70%;
+    width: 60%;
+    margin-top: 70px;
+}
+
+.DemoForm {
+    padding: 5%;
+
+}
+
+.Demoinput {
+    width: 300px !important;
+
+
+}
+
+.submitbtn {
+
+    width: 70px;
+    background-color: #0694A2;
+    margin-right: 20rem;
+    margin-top: 20px;
+}
+
+.infoBimar {
+    margin-top: 20px !important;
+
+    margin-right: 100px;
+}
+
+.BoxContentListinfo1 {
+    width: 100%;
+    height: 20px;
+}
+
+.BoxContentListinfo {
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    border-color: gray;
+    padding-top: 30px;
+    margin-top: 15px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.boxtypeinfo {
+    height: 50px;
+    width: 100%;
+    background-color: #EBF6F8;
+    border-radius: 15px;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.boxtypeinfoText {
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.icontypeinfo {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+.boxtypeinfoTextOpen {
+
+    font-size: 15px;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+.boxtypeinfocontetnt {
+    margin-top: -25px;
+    margin-right: 0px;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+.darkmode {
+    background-color: #212424 !important;
+}
+
+.darkmode p {
+
+    color: #ffffff;
+}
+
+.darkmode #boxnav {
+
+    background-color: rgb(65, 75, 75)
+}
+
+.darkmode label {
+
+    color: #ffffff;
+}
+
+.darkmode #BoxContentListtable {
+
+    color: #ffffff;
+    background-color: rgb(100, 116, 116) !important;
+
+}
+
+.darkmode .form-control {
+    color: #ffffff;
+    background-color: rgb(106, 122, 122)
+}
+
+.darkmode .boxtypeinfo {
+
+    color: #ffffff;
+    background-color: rgb(100, 116, 116) !important;
+
+}
+
+.darkmode .BoxContentListinfo {
+
+    color: #ffffff;
+    background-color: rgb(100, 116, 116) !important;
+
+}
+
+.darkmode .dropdown-menu {
+    background-color: rgb(38, 44, 44);
+}
+
+.darkmode .contentDashboard3 {
+    color: #ffffff;
+    background-color: rgb(100, 116, 116) !important;
+}
+
+.darkmode .contentDashboard2 {
+    color: #ffffff;
+    background-color: rgb(100, 116, 116) !important;
+}
+
+.darkmode .contentDashboard1 {
+    color: #ffffff;
+    background-color: rgb(100, 116, 116) !important;
+}
+
+.darkmode .lablenezam {
+    background-color: rgb(100, 116, 116) !important;
+}
+
+.darkmode .accordion-button {
+    color: #ffffff;
+    background-color: rgb(100, 116, 116) !important;
+}
+
+.darkmode .accordion-collapse {
+    color: #ffffff;
+    background-color: rgb(37, 49, 49) !important;
+
+}
+
+.tablechart {
+    border: none;
+    justify-content: right !important;
+    align-items: center;
+}
+
+.tdchart {
+
+    border-radius: 10px;
+    width: 80px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #69bec72f !important;
+}
+
+.tdchart1 {
+
+    border-radius: 10px;
+    width: 30px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #69bec700 !important;
+}
+
+
+@media (max-width:700px) {
+    .mainContent {
+        display: flex !important;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-right: 50px !important;
+        display: flex;
+        flex-direction: column;
+        width: 80% !important;
+        margin-top: 0;
+
+    }
+
+    .Demoinput {
+        width: 100px !important;
+
+
+    }
+
+
+
+}
+
+@media (max-width:1024px) {
+    .imgDemo {
+        display: none;
+    }
+
+
+
+
+
+
+}
+
+@media (max-width:1568px) {
+    .Demoinput {
+        width: 200px !important;
+
+
+    }
+
+}
+
+@media (max-width:1316px) {
+    .dashboardMenu {
+        display: none !important;
+    }
+
+
+}
+
+@media (max-width:425px) {
+    .nameDashBoard {
+        font-size: 10px;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+
+}

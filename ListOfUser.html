@@ -1,0 +1,299 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/Style1.css" />
+    <link rel="stylesheet" href="css/Style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <title>بیمارستان تخصصی سینا|داشبورد </title>
+</head>
+
+<Style>
+    body {
+        background-color: #ebf6f8;
+        overflow: hidden;
+    }
+</Style>
+
+<body class="d-flex flex-column">
+
+    <div class="BackBtn"><img class="BackBtn" src="img/Group 33999.png"
+            onclick="window.location.href='http://127.0.0.1:5500/Index.html';"></div>
+
+
+
+
+    <div class="contentsDashboard row col-12">
+        <div class="dashboardMenu col-4 d-none d-lg-flex">
+            <div class="profileimg"><img src="img/Ellipse 49.png"></div>
+
+            <div class="LogoBar"><img class="logoDashboard" src="img/logo-copy64.png" alt=""></div>
+
+            <nav class="navDashBoard">
+
+                <a href="Dashboard.html"> داشبورد</a>
+                <div class="backgroundmenu">
+                    <img src="img/Group 34029.png" class="hoverdashboardicon">
+                    <a class="text-dark" href="ListOfUser.html"> بیماران</a>
+                </div>
+                <a href="Demographig.html">اطلاعیه ها </a>
+                <a href="#">تنظیمات </a>
+                <a href="#">خروج </a>
+
+            </nav>
+
+
+
+
+
+
+            <div class="darkmodeBtn">
+                <div class="swichdarkmodeBtn"></div>
+                <img onclick="document.body.classList.toggle('darkmode')" src="img/moon.svg" class="icondarkmodeBtn">
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="mainContent d-flex">
+
+            <div class="headDashBoard">
+
+                <div class="d-flex BoxmainContent">
+                    <p class="nameDashBoard">دکتر ناصر مقدسی</p>
+                    <div>
+
+                        <div class="dropdown">
+                            <button class="dropdown-toggle border-0 bg-transparent " type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div>
+                                    <svg class="iconNotif" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+                                    </svg>
+
+
+                                    <span class="badge badge-secondary badgenotif">3</span>
+
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">
+                                        <div class=" justify-content-between d-flex">
+                                            <span class="badge badge-secondary badgenotiftab">1</span>
+                                            <p class="px-2"> پذیرش علی محمدی را تایید کنید</p>
+
+
+
+                                        </div>
+
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="  d-flex">
+                                            <span class="badge badge-secondary badgenotiftab">1</span>
+                                            <p class="px-2"> وضعیت بیماران در لیست آماده است</p>
+
+
+
+                                        </div>
+
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="  d-flex">
+                                            <span class="badge badge-secondary badgenotiftab">1</span>
+                                            <p class="px-2"> تیکت شما در حال رسیدگی است.</p>
+
+
+
+                                        </div>
+
+                                    </a></li>
+
+                            </ul>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+                <div class="d-flex BoxmainContent">
+                    <p class="nameDashBoard"> شماره نظام پزشکی: </p>
+                    <div class="lablenezam">
+                        <p class="nameDashBoard"> ۹۷۰۴۰ </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <br>
+
+
+            <div class="scrollBarList" id="style-16">
+                <table class="table">
+                    <thead class="headList">
+                        <tr class="thcolorList">
+
+                            <th scope="col" class="thcolorList"
+                                style=" border-top-right-radius: 10px; border-bottom-right-radius: 10px; ">نام
+                                بیمار</th>
+                            <th scope="col" class="thcolorList">شماره نوبت</th>
+                            <th scope="col" class="thcolorList">علت مراجعه</th>
+                            <th scope="col" class="thcolorList">ساعت پذیرش </th>
+                            <th scope="col" class="thcolorList">تاریخ
+                                پذیرش </th>
+
+                            <th scope="col" class="thcolorList">جلسات </th>
+                            <th scope="col" class="thcolorList"
+                                style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">جزئیات </th>
+                        </tr>
+                    </thead>
+
+
+
+
+
+                    <tr class="BoxContentList1"></tr>
+                    <tr class="BoxContentList">
+
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable"
+                            style=" border-top-right-radius: 10px; border-bottom-right-radius: 10px; ">علی محمدی
+                        </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۷۸ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">تصادف </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۴ : ۱۷ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۴۰۲/۰۴/۲۴ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۸ جلسه </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable"
+                            style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"> <img
+                                class="detailicon" src="img/Group 34020.png">
+                        </td>
+                    </tr>
+
+
+                    <tr class="BoxContentList1"></tr>
+                    <tr class="BoxContentList">
+
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable"
+                            style=" border-top-right-radius: 10px; border-bottom-right-radius: 10px; ">زهرا مرادی
+                        </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۷۹ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">تصادف </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۴ : ۱۷ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۴۰۲/۰۴/۲۴ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۵ جلسه </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable"
+                            style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"> <img
+                                class="detailicon" src="img/Group 34020.png">
+                        </td>
+                    </tr>
+
+                    <tr class="BoxContentList1"></tr>
+                    <tr class="BoxContentList">
+
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable"
+                            style=" border-top-right-radius: 10px; border-bottom-right-radius: 10px; ">حجت اکبری
+                        </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۷۸ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">تصادف </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۴ : ۱۷ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۴۰۲/۰۴/۲۴ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۴ جلسه </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable"
+                            style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"> <img
+                                class="detailicon" src="img/Group 34020.png">
+                        </td>
+                    </tr>
+
+                    <tr class="BoxContentList1"></tr>
+                    <tr class="BoxContentList">
+
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable"
+                            style=" border-top-right-radius: 10px; border-bottom-right-radius: 10px; ">میثم اسکندری
+                        </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۷۸ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">تصادف </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۴ : ۱۷ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۴۰۲/۰۴/۲۴ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۲ جلسه </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable"
+                            style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"> <img
+                                class="detailicon" src="img/Group 34020.png">
+                        </td>
+                    </tr>
+
+                    <tr class="BoxContentList1"></tr>
+                    <tr class="BoxContentList">
+
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable"
+                            style=" border-top-right-radius: 10px; border-bottom-right-radius: 10px; ">مریم رضایی
+                        </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۷۸ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">تصادف </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۴ : ۱۷ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۴۰۲/۰۴/۲۴ </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۳ جلسه </td>
+                        <td scope="col" class="BoxContentListtable" id="BoxContentListtable"
+                            style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"> <img
+                                class="detailicon" src="img/Group 34020.png">
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

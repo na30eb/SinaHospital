@@ -1,0 +1,627 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/Style1.css" />
+    <link rel="stylesheet" href="css/Style.css" />
+    <link rel="stylesheet" href="css/Style2.css" />
+    <link rel="stylesheet" href="css/Style3.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>بیمارستان تخصصی سینا|داشبورد </title>
+</head>
+
+<Style>
+    body {
+        background-color: #ebf6f8;
+        overflow: hidden;
+    }
+</Style>
+
+<body class="d-flex flex-column">
+    <div class="BackBtn"><img class="BackBtn" src="img/Group 33999.png"
+            onclick="window.location.href='http://127.0.0.1:5500/Index.html';"></div>
+    <div class="contentsDashboard row col-12">
+        <div class="dashboardMenu  col-4 d-none d-xxl-flex">
+            <div class="profileimg"><img src="img/Ellipse 49.png"></div>
+
+            <div class="LogoBar"><img class="logoDashboard" src="img/logo-copy64.png" alt=""></div>
+
+            <nav class="navDashBoard">
+
+                <a href="Dashboard.html"> داشبورد</a>
+
+                <a href="ListOfUser.html"> بیماران</a>
+                <div class="backgroundmenu">
+                    <img src="img/Group 34029.png" class="hoverdashboardicon">
+                    <a class="text-dark" href="Demographig.html">اطلاعیه ها </a>
+                </div>
+
+                <a href="#">تنظیمات </a>
+                <a href="#">خروج </a>
+
+            </nav>
+
+
+            <div class="darkmodeBtn">
+                <div class="swichdarkmodeBtn"></div>
+                <img onclick="document.body.classList.toggle('darkmode')" src="img/moon.svg" class="icondarkmodeBtn">
+            </div>
+
+        </div>
+        <div class="mainContent d-flex ">
+            <div class="headDashBoard">
+                <div class="d-flex BoxmainContent">
+                    <p class="nameDashBoard">دکتر ناصر مقدسی</p>
+                    <div>
+
+                        <div class="dropdown">
+                            <button class="dropdown-toggle  border-0 bg-transparent " type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div>
+                                    <svg class="iconNotif" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+                                    </svg>
+
+
+                                    <span class="badge badge-secondary badgenotif">3</span>
+
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">
+                                        <div class=" justify-content-between d-flex">
+                                            <span class="badge badge-secondary badgenotiftab">1</span>
+                                            <p class="px-2"> پذیرش علی محمدی را تایید کنید</p>
+
+
+
+                                        </div>
+
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="  d-flex">
+                                            <span class="badge badge-secondary badgenotiftab">1</span>
+                                            <p class="px-2"> وضعیت بیماران در لیست آماده است</p>
+
+
+
+                                        </div>
+
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="#">
+                                        <div class="  d-flex">
+                                            <span class="badge badge-secondary badgenotiftab">1</span>
+                                            <p class="px-2"> تیکت شما در حال رسیدگی است.</p>
+
+
+
+                                        </div>
+
+                                    </a></li>
+
+                            </ul>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+                <div class="d-flex BoxmainContent">
+                    <p class="nameDashBoard"> شماره نظام پزشکی: </p>
+                    <div class="lablenezam">
+                        <p class="nameDashBoard"> ۹۷۰۴۰ </p>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <nav>
+                <div class="nav nav-tabs " id="nav-tab" role="tablist">
+                    <button class="nav-link active border border-primary boxnavbtn" id="nav-home-tab"
+                        data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
+                        aria-controls="nav-home" aria-selected="true">اطلاعات دمو
+                        گرافیک</button>
+                    <button class="nav-link border border-primary boxnavbtn" id="nav-profile-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                        aria-selected="false">اطلاعات کلی
+                        بیمار</button>
+                    <button class="nav-link border border-primary boxnavbtn" id="nav-contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                        aria-selected="false">وضعیت
+                        عملکردی</button>
+
+                    <button class="nav-link border border-primary boxnavbtn" id="nav-contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                        aria-selected="false">مشکلات دفعی
+                    </button>
+                    <button class="nav-link border border-primary boxnavbtn" id="nav-contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                        aria-selected="false">
+                        مشکلات فیزیکی اندام فوقانی و تحتانی</button>
+                    <button class="nav-link border border-primary boxnavbtn" id="nav-contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                        aria-selected="false">
+                        درد</button>
+                    <button class="nav-link border border-primary boxnavbtn" id="nav-contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                        aria-selected="false">اختلالات بلع و گفتار
+                    </button>
+                    <button class="nav-link border border-primary boxnavbtn" id="nav-contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                        aria-selected="false"> سایر موارد
+                    </button>
+                    <button class="nav-link border border-primary boxnavbtn" id="nav-contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                        aria-selected="false"> معاینات </button>
+
+                    </button>
+                    <button class="nav-link border border-primary boxnavbtn" id="nav-contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                        aria-selected="false"> برنامه درمانی
+                        مداخلات توان بخشی
+                    </button>
+                </div>
+            </nav>
+            <div class="tab-content  " id="nav-tabContent">
+                <div class="tab-pane fade show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class=" boxnav border border-primary d-flex overflow-y-scroll overflow-x-scroll "
+                        id="style-16">
+                        <div class="col-md-7  h-100">
+                            <form class="row g-2 DemoForm " id="form" onsubmit="return validform()" action="#">
+                                <div class="row cols-12 col-xs-12">
+                                    <div class="col-md-6">
+                                        <label class="form-label">نام </label>
+                                        <input type="tel" class="form-control Demoinput " id="name" placeholder="Name">
+                                        <span id="nameerror" class="form-label errorForm  d-none">وارد کردن نام ضروری
+                                            است</span>
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <label class="form-label">نام خانوادگی</label>
+                                        <input type="tel" class="form-control Demoinput" id="family"
+                                            placeholder="Family">
+                                        <span id="familyerror" class="form-label errorForm d-none">وارد کردن فامیلی
+                                            ضروری است</span>
+                                    </div>
+                                </div>
+                                <div class="row cols-12 col-xs-12">
+                                    <div class="col-md-6">
+                                        <label class="form-label"> نام پدر </label>
+                                        <input type="tel" class="form-control Demoinput" id="fathername"
+                                            placeholder="Father name">
+                                        <span id="fathernameerror" class="form-label errorForm d-none">وارد کردن نام پدر
+                                            است</span>
+
+                                    </div>
+                                    <div class="col-md-6" col-xs-12>
+                                        <label class="form-label">کد ملی </label>
+                                        <input type="tel" class="form-control Demoinput" id="codeMeli"
+                                            placeholder="National code">
+                                        <span id="codemelierror" class="form-label errorForm d-none">وارد کردن کد ملی
+                                            ضروری
+                                            است</span>
+                                    </div>
+                                </div>
+                                <div class="row cols-12 col-xs-12">
+                                    <div class="col-md-6">
+                                        <label class="form-label"> تاریخ تولد</label>
+                                        <input type="date" class="form-control Demoinput" id="birthday">
+                                        <span id="dateerror" class="form-label errorForm d-none">وارد کردن تاریخ تولد
+                                            ضروری
+                                            است</span>
+                                    </div>
+                                    <div class="col-md-2 col-xs-12">
+                                        <label class="form-label"> جنسیت </label>
+                                        <br>
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                            value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            زن
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                            value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            مرد
+                                        </label>
+                                    </div>
+                                    <div class="row cols-12 col-xs-12">
+                                        <div class="col-md-12">
+                                            <label class="form-label"> آدرس </label>
+                                            <textarea name="message" rows="5" cols="70" id="address"
+                                                class="form-control" placeholder="Address" type="tel"></textarea>
+                                            </textarea>
+                                            <span id="addresserror" class="form-label errorForm d-none">وارد کردن آدرس
+                                                ضروری
+                                                است</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="row cols-12 col-xs-12">
+                                        <div class="col-md-6">
+                                            <label class="form-label"> تلفن </label>
+                                            <input type="tel" class="form-control Demoinput" id="tel"
+                                                placeholder="Phone number">
+                                            <span id="telerror" class="form-label errorForm d-none">وارد کردن تلفن ضروری
+                                                است</span>
+
+                                        </div>
+
+                                        <div class="col-md-6" col-xs-12>
+                                            <label class="form-label">موبایل </label>
+                                            <input type="tel" class="form-control Demoinput" id="mobile"
+                                                placeholder="Mobile number">
+                                            <span id="mobileerror" class="form-label errorForm d-none">وارد کردن موبایل
+                                                ضروری
+                                                است</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="row cols-12">
+                                        <button type="submit" class="btn btn-primary submitbtn " id=" subbtn"
+                                            data-toggle="modal" href="#myModal">ثبت
+                                        </button>
+                                    </div>
+
+                                    <!-- 
+                                         d-none   data-toggle="modal"
+                                     -->
+
+                                    <div id="myModal" class="  modal fade ">
+                                        <div class="modal-dialog modal-confirm  ">
+                                            <div class="modal-content">
+                                                <div class="modal-header justify-content-center">
+                                                    <div class="icon-box">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="green"
+                                                            class="w-6 h-6">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                d="m4.5 12.75 6 6 9-13.5" />
+                                                        </svg>
+
+                                                    </div>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                                            stroke="red" class="w-6 h-6">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                d="M6 18 18 6M6 6l12 12" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-center">
+
+                                                    <p>با موفقیت ثبت شد.</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 h-100 d-flex justify-content-center d-none d-lg-block "> <img class="imgDemo"
+                            src="img/Group 34026.png" alt="#">
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class=" boxnav border border-primary d-flex " id="boxnav">
+                    <div class="col-10  infoBimar">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="thcolorList"
+                                        style=" border-top-right-radius: 10px; border-bottom-right-radius: 10px; ">نام
+                                        بیمار</th>
+                                    <th scope="col" class="thcolorList">شماره نوبت</th>
+                                    <th scope="col" class="thcolorList">علت مراجعه</th>
+                                    <th scope="col" class="thcolorList">ساعت پذیرش </th>
+                                    <th scope="col" class="thcolorList">تاریخ
+                                        پذیرش </th>
+
+                                    <th scope="col" class="thcolorList"
+                                        style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">جلسات
+                                    </th>
+
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tr class="BoxContentListinfo1"></tr>
+                            <tr class="BoxContentListinfo">
+
+                                <td scope="col" class="BoxContentListtable" id="BoxContentListtable"
+                                    style=" border-top-right-radius: 10px; border-bottom-right-radius: 10px; ">علی محمدی
+                                </td>
+                                <td scope="col" class="BoxContentListtable " id="BoxContentListtable">۱۷۸
+                                </td>
+                                <td scope="col" class="BoxContentListtable" id="BoxContentListtable">تصادف </td>
+                                <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۴ : ۱۷ </td>
+                                <td scope="col" class="BoxContentListtable" id="BoxContentListtable">۱۴۰۲/۰۴/۲۴ </td>
+                                <td scope="col" class="BoxContentListtable" id="BoxContentListtable"
+                                    style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">۸ جلسه </td>
+                            </tr>
+                        </table>
+
+                        <div class="scrollBarList" id="style-16">
+
+                            <div class="accordion" id="accordionExample">
+                                <div class=" accordion-item border-0  ">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            ام اس تایید شده
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show  "
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body ">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet vitae
+                                            corrupti iusto provident aspernatur inventore labore nihil consectetur velit
+                                            tenetur ex necessitatibus ipsum molestias, cum et saepe dolores, similique
+                                            consequatur.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            نوع ام اس
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <br>
+                                            <table class="boxtypeinfocontetnt">
+                                                <tr>
+                                                    <td>
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                            id="gridRadios1" value="option1" checked>
+                                                        <label class="form-check-label" for="gridRadios1">
+                                                            عود کننده، فروکش کننده
+                                                        </label>
+                                                    </td>
+
+                                                    <td> <input class="form-check-input" type="radio" name="gridRadios"
+                                                            id="gridRadios1" value="option1" checked>
+                                                        <label class="form-check-label" for="gridRadios1">
+                                                            پیشرونده اولیه
+                                                        </label>
+                                                    </td>
+                                                    <td><input class="form-check-input" type="radio" name="gridRadios"
+                                                            id="gridRadios1" value="option1" checked>
+                                                        <label class="form-check-label" for="gridRadios1">
+                                                            پیشرونده ثانویه
+                                                        </label>
+                                                    </td>
+                                                    <td><input class="form-check-input" type="radio" name="gridRadios"
+                                                            id="gridRadios1" value="option1" checked>
+                                                        <label class="form-check-label" for="gridRadios1">
+                                                            مشخص نیست
+                                                        </label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            سایر بیماریها
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            قلبی عروقی
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            مشکلات روحی
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseSix">
+                                            تشنج
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+</body>
+
+
+<script>
+
+
+
+
+
+    function validform() {
+
+
+
+        var name = document.getElementById('name').value;
+        var family = document.getElementById('family').value;
+        var fathername = document.getElementById('fathername').value;
+        var codeMeli = document.getElementById('codeMeli').value;
+        var birthday = document.getElementById('birthday').value;
+        var address = document.getElementById('address').value;
+        var tel = document.getElementById('tel').value;
+        var mobile = document.getElementById('mobile').value;
+        // var modal = document.querySelector('myModal');
+        var btn = document.getElementById('subbtn');
+
+
+
+        var nameerror = document.getElementById('nameerror');
+        var familyerror = document.getElementById('familyerror');
+        var fathernameerror = document.getElementById('fathernameerror');
+        var codemelierror = document.getElementById('codemelierror');
+        var dateerror = document.getElementById('dateerror');
+        var addresserror = document.getElementById('addresserror');
+        var telerror = document.getElementById('telerror');
+        var mobileerror = document.getElementById('mobileerror');
+
+
+        let validname = name.length != "";
+        let validfamily = family.length != "";
+        let validCodeMelli = codeMeli.length != "" && codeMeli.length == 10;
+        let validfathername = fathername.length != "";
+        let validbirthday = birthday.length != "";
+        let validaddress = address.length != "";
+        let validtel = tel.length != "" && tel.length && mobile.length == 11;
+        let validmobile = mobile.length != "";
+
+
+
+
+        // if (validname && validfamily && validcodeMeli && validfathername
+        //     && validbirthday && validaddress && validtel && validmobile) {
+        //     btn.setAttribute("data-toggle", "modal");
+
+        // }
+        if (!validname) {
+
+            // modal.classList.add('modal');
+            // btn.setAttribute("data-toggle", "modal");
+            nameerror.classList.remove('d-none');
+        }
+
+        if (!validfamily) {
+
+            familyerror.classList.remove('d-none');
+        }
+
+        if (!validCodeMelli) {
+
+            codemelierror.classList.remove('d-none');
+        }
+
+        if (!validbirthday) {
+
+            dateerror.classList.remove('d-none');
+        }
+        if (!validaddress) {
+
+            addresserror.classList.remove('d-none');
+        }
+
+        if (!validtel) {
+
+            telerror.classList.remove('d-none');
+        }
+        if (!validmobile) {
+
+            mobileerror.classList.remove('d-none');
+        }
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
